@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <!--
 Generated at Thu Oct 19 2023 08:32:53 GMT+0000 (Coordinated Universal Time)
@@ -9,135 +10,968 @@ SHA: 12637428b78d71f11fea546462a8a4e5d8e490e4
   <title>Versioning policy - JavaScript Data Grid | Handsontable</title>
   <meta name="generator" content="VuePress 1.9.10">
   <link rel="icon" href="https://handsontable.com/static/images/template/ModCommon/favicon-32x32.png">
-    <link rel="preload" href="http://localhost:8080/docs/data/common.json" as="fetch" crossorigin="">
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ef171f1d-a288-433f-b680-3cdbdebd5646"></script>
-    <script>const DOCS_VERSION = 'next';</script>
-    <script>
-      (function(w, d) {
-        const osColorScheme = () => w.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        const colorScheme = localStorage.getItem('handsontable/docs::color-scheme');
-        const preferredScheme = colorScheme ? colorScheme : osColorScheme();
+  <link rel="preload" href="http://localhost:8080/data/common.json" as="fetch" crossorigin="">
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
+    data-cbid="ef171f1d-a288-433f-b680-3cdbdebd5646"></script>
+  <script>const DOCS_VERSION = 'next';</script>
+  <script>
+    (function (w, d) {
+      const osColorScheme = () => w.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const colorScheme = localStorage.getItem('handsontable/docs::color-scheme');
+      const preferredScheme = colorScheme ? colorScheme : osColorScheme();
 
-        if (preferredScheme === 'dark') {
-          d.documentElement.classList.add('theme-dark');
-        }
+      if (preferredScheme === 'dark') {
+        d.documentElement.classList.add('theme-dark');
+      }
 
-        w.SELECTED_COLOR_SCHEME = preferredScheme;
-      }(window, document));
-    </script>
-  <meta name="description" content="Handsontable follows the principles of Semantic Versioning (SemVer). Each version is numbered in the X.Y.Z (Major.Minor.Patch) format.">
-    <meta name="og:url" content="http://localhost:8080/docs/javascript-data-grid/versioning-policy/">
-    <meta name="og:type" content="website">
-    <meta name="og:title" content="Versioning policy">
-    <meta name="og:description" content="Handsontable follows the principles of Semantic Versioning (SemVer). Each version is numbered in the X.Y.Z (Major.Minor.Patch) format.">
-    <meta name="og:image" content="http://localhost:8080/docs/img/handsontable-banner-og.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" href="/docs/assets/css/0.styles.e477d1cf.css" as="style"><link rel="preload" href="/docs/assets/js/app.1079bcf6.js" as="script"><link rel="preload" href="/docs/assets/js/3.cb1a7b17.js" as="script"><link rel="preload" href="/docs/assets/js/2.11f10a22.js" as="script"><link rel="preload" href="/docs/assets/js/1.7ae82910.js" as="script"><link rel="preload" href="/docs/assets/js/214.c069fd03.js" as="script"><link rel="prefetch" href="/docs/assets/js/100.8ac561ae.js"><link rel="prefetch" href="/docs/assets/js/101.62d5b83e.js"><link rel="prefetch" href="/docs/assets/js/102.799e9c2e.js"><link rel="prefetch" href="/docs/assets/js/103.3f09db8d.js"><link rel="prefetch" href="/docs/assets/js/104.73dea498.js"><link rel="prefetch" href="/docs/assets/js/105.b554116f.js"><link rel="prefetch" href="/docs/assets/js/106.12a0836c.js"><link rel="prefetch" href="/docs/assets/js/107.162ddd3f.js"><link rel="prefetch" href="/docs/assets/js/108.c3a03578.js"><link rel="prefetch" href="/docs/assets/js/109.dca99c99.js"><link rel="prefetch" href="/docs/assets/js/11.de8e1bb9.js"><link rel="prefetch" href="/docs/assets/js/110.5e715857.js"><link rel="prefetch" href="/docs/assets/js/111.9215c373.js"><link rel="prefetch" href="/docs/assets/js/112.edaf0a42.js"><link rel="prefetch" href="/docs/assets/js/113.60629134.js"><link rel="prefetch" href="/docs/assets/js/114.d2b185bf.js"><link rel="prefetch" href="/docs/assets/js/115.74633063.js"><link rel="prefetch" href="/docs/assets/js/116.dccd7d39.js"><link rel="prefetch" href="/docs/assets/js/117.5a99750f.js"><link rel="prefetch" href="/docs/assets/js/118.b447f5b3.js"><link rel="prefetch" href="/docs/assets/js/119.1040c304.js"><link rel="prefetch" href="/docs/assets/js/12.6c68e268.js"><link rel="prefetch" href="/docs/assets/js/120.91cbe7d6.js"><link rel="prefetch" href="/docs/assets/js/121.46008d24.js"><link rel="prefetch" href="/docs/assets/js/122.aa1433b2.js"><link rel="prefetch" href="/docs/assets/js/123.45a47ce3.js"><link rel="prefetch" href="/docs/assets/js/124.b49776fe.js"><link rel="prefetch" href="/docs/assets/js/125.3ce13aa7.js"><link rel="prefetch" href="/docs/assets/js/126.bd57595e.js"><link rel="prefetch" href="/docs/assets/js/127.6e71e249.js"><link rel="prefetch" href="/docs/assets/js/128.f0228708.js"><link rel="prefetch" href="/docs/assets/js/129.3a347f2a.js"><link rel="prefetch" href="/docs/assets/js/13.b185b75d.js"><link rel="prefetch" href="/docs/assets/js/130.9f033719.js"><link rel="prefetch" href="/docs/assets/js/131.82506149.js"><link rel="prefetch" href="/docs/assets/js/132.7b6652e3.js"><link rel="prefetch" href="/docs/assets/js/133.4b2f8457.js"><link rel="prefetch" href="/docs/assets/js/134.7d9e0580.js"><link rel="prefetch" href="/docs/assets/js/135.4d109b3d.js"><link rel="prefetch" href="/docs/assets/js/136.de605410.js"><link rel="prefetch" href="/docs/assets/js/137.351a4558.js"><link rel="prefetch" href="/docs/assets/js/138.afa5d96a.js"><link rel="prefetch" href="/docs/assets/js/139.9c9067fa.js"><link rel="prefetch" href="/docs/assets/js/14.093a2b2f.js"><link rel="prefetch" href="/docs/assets/js/140.752a4a68.js"><link rel="prefetch" href="/docs/assets/js/141.7764811a.js"><link rel="prefetch" href="/docs/assets/js/142.42f19386.js"><link rel="prefetch" href="/docs/assets/js/143.f78137c0.js"><link rel="prefetch" href="/docs/assets/js/144.b2ea2325.js"><link rel="prefetch" href="/docs/assets/js/145.56f45097.js"><link rel="prefetch" href="/docs/assets/js/146.8bc59776.js"><link rel="prefetch" href="/docs/assets/js/147.e899446b.js"><link rel="prefetch" href="/docs/assets/js/148.4c083e63.js"><link rel="prefetch" href="/docs/assets/js/149.b5c18999.js"><link rel="prefetch" href="/docs/assets/js/15.79a9355a.js"><link rel="prefetch" href="/docs/assets/js/150.f2df885e.js"><link rel="prefetch" href="/docs/assets/js/151.781fbf52.js"><link rel="prefetch" href="/docs/assets/js/152.d3abf64b.js"><link rel="prefetch" href="/docs/assets/js/153.ce73548f.js"><link rel="prefetch" href="/docs/assets/js/154.4677f00e.js"><link rel="prefetch" href="/docs/assets/js/155.a5dedf78.js"><link rel="prefetch" href="/docs/assets/js/156.3f88271e.js"><link rel="prefetch" href="/docs/assets/js/157.1c552fa8.js"><link rel="prefetch" href="/docs/assets/js/158.50e14848.js"><link rel="prefetch" href="/docs/assets/js/159.46b1aa5c.js"><link rel="prefetch" href="/docs/assets/js/16.65f419f3.js"><link rel="prefetch" href="/docs/assets/js/160.bb3a5290.js"><link rel="prefetch" href="/docs/assets/js/161.82fce5d5.js"><link rel="prefetch" href="/docs/assets/js/162.42a8409a.js"><link rel="prefetch" href="/docs/assets/js/163.7b6d73dd.js"><link rel="prefetch" href="/docs/assets/js/164.7db13087.js"><link rel="prefetch" href="/docs/assets/js/165.141bdbec.js"><link rel="prefetch" href="/docs/assets/js/166.c299f188.js"><link rel="prefetch" href="/docs/assets/js/167.3a72d49b.js"><link rel="prefetch" href="/docs/assets/js/168.56cc3ab9.js"><link rel="prefetch" href="/docs/assets/js/169.92a3e612.js"><link rel="prefetch" href="/docs/assets/js/17.16cab6ef.js"><link rel="prefetch" href="/docs/assets/js/170.79c2939b.js"><link rel="prefetch" href="/docs/assets/js/171.f75a63d0.js"><link rel="prefetch" href="/docs/assets/js/172.e286a772.js"><link rel="prefetch" href="/docs/assets/js/173.f3ca0ad0.js"><link rel="prefetch" href="/docs/assets/js/174.4250f4b4.js"><link rel="prefetch" href="/docs/assets/js/175.c711c77e.js"><link rel="prefetch" href="/docs/assets/js/176.31b801ed.js"><link rel="prefetch" href="/docs/assets/js/177.c1eaeb77.js"><link rel="prefetch" href="/docs/assets/js/178.d7d5af85.js"><link rel="prefetch" href="/docs/assets/js/179.b0548e82.js"><link rel="prefetch" href="/docs/assets/js/18.d116056d.js"><link rel="prefetch" href="/docs/assets/js/180.e3f06627.js"><link rel="prefetch" href="/docs/assets/js/181.6769a3c6.js"><link rel="prefetch" href="/docs/assets/js/182.f1e0cc3f.js"><link rel="prefetch" href="/docs/assets/js/183.60d5a625.js"><link rel="prefetch" href="/docs/assets/js/184.c873c4b5.js"><link rel="prefetch" href="/docs/assets/js/185.e13c56e5.js"><link rel="prefetch" href="/docs/assets/js/186.7aae082f.js"><link rel="prefetch" href="/docs/assets/js/187.4788f81b.js"><link rel="prefetch" href="/docs/assets/js/188.4222dc80.js"><link rel="prefetch" href="/docs/assets/js/189.b1ba259a.js"><link rel="prefetch" href="/docs/assets/js/19.a571a1d6.js"><link rel="prefetch" href="/docs/assets/js/190.884f3eb3.js"><link rel="prefetch" href="/docs/assets/js/191.aabb59f0.js"><link rel="prefetch" href="/docs/assets/js/192.80e0a70d.js"><link rel="prefetch" href="/docs/assets/js/193.f76b595c.js"><link rel="prefetch" href="/docs/assets/js/194.b79bcd33.js"><link rel="prefetch" href="/docs/assets/js/195.cecdba81.js"><link rel="prefetch" href="/docs/assets/js/196.4d6f758c.js"><link rel="prefetch" href="/docs/assets/js/197.4ad65be8.js"><link rel="prefetch" href="/docs/assets/js/198.7cf926ad.js"><link rel="prefetch" href="/docs/assets/js/199.ca58dacd.js"><link rel="prefetch" href="/docs/assets/js/20.8ee7e87a.js"><link rel="prefetch" href="/docs/assets/js/200.c637c378.js"><link rel="prefetch" href="/docs/assets/js/201.57b3ba86.js"><link rel="prefetch" href="/docs/assets/js/202.564a9bb8.js"><link rel="prefetch" href="/docs/assets/js/203.5d573ea8.js"><link rel="prefetch" href="/docs/assets/js/204.400ff980.js"><link rel="prefetch" href="/docs/assets/js/205.6e90b2ef.js"><link rel="prefetch" href="/docs/assets/js/206.a9b7f038.js"><link rel="prefetch" href="/docs/assets/js/207.4bb9612c.js"><link rel="prefetch" href="/docs/assets/js/208.e9db298d.js"><link rel="prefetch" href="/docs/assets/js/209.5eb439d5.js"><link rel="prefetch" href="/docs/assets/js/21.e5f456de.js"><link rel="prefetch" href="/docs/assets/js/210.847f6f95.js"><link rel="prefetch" href="/docs/assets/js/211.000d4f61.js"><link rel="prefetch" href="/docs/assets/js/212.c70abb20.js"><link rel="prefetch" href="/docs/assets/js/213.5b3b53c8.js"><link rel="prefetch" href="/docs/assets/js/215.69583de8.js"><link rel="prefetch" href="/docs/assets/js/216.1e050e0b.js"><link rel="prefetch" href="/docs/assets/js/217.210cab50.js"><link rel="prefetch" href="/docs/assets/js/218.70e4a884.js"><link rel="prefetch" href="/docs/assets/js/219.a3728d35.js"><link rel="prefetch" href="/docs/assets/js/22.fe00f80e.js"><link rel="prefetch" href="/docs/assets/js/220.05491a71.js"><link rel="prefetch" href="/docs/assets/js/221.095431bd.js"><link rel="prefetch" href="/docs/assets/js/222.50423628.js"><link rel="prefetch" href="/docs/assets/js/223.76ed175d.js"><link rel="prefetch" href="/docs/assets/js/224.0c0c9dbd.js"><link rel="prefetch" href="/docs/assets/js/225.5b6a6079.js"><link rel="prefetch" href="/docs/assets/js/226.cc89a133.js"><link rel="prefetch" href="/docs/assets/js/227.a9a18554.js"><link rel="prefetch" href="/docs/assets/js/228.cf98be51.js"><link rel="prefetch" href="/docs/assets/js/229.cef98ed5.js"><link rel="prefetch" href="/docs/assets/js/23.b02af3b4.js"><link rel="prefetch" href="/docs/assets/js/230.5aa7944b.js"><link rel="prefetch" href="/docs/assets/js/231.99f83c12.js"><link rel="prefetch" href="/docs/assets/js/232.39d8b085.js"><link rel="prefetch" href="/docs/assets/js/233.f6f4da03.js"><link rel="prefetch" href="/docs/assets/js/234.1e2f8af1.js"><link rel="prefetch" href="/docs/assets/js/235.d64de8a1.js"><link rel="prefetch" href="/docs/assets/js/236.b80a57de.js"><link rel="prefetch" href="/docs/assets/js/237.94c8cdea.js"><link rel="prefetch" href="/docs/assets/js/238.b1f2eb99.js"><link rel="prefetch" href="/docs/assets/js/239.087c675a.js"><link rel="prefetch" href="/docs/assets/js/24.a982ba29.js"><link rel="prefetch" href="/docs/assets/js/240.0762d99d.js"><link rel="prefetch" href="/docs/assets/js/241.996d57c0.js"><link rel="prefetch" href="/docs/assets/js/242.f26faf25.js"><link rel="prefetch" href="/docs/assets/js/243.7dea290b.js"><link rel="prefetch" href="/docs/assets/js/244.d08b7f3a.js"><link rel="prefetch" href="/docs/assets/js/245.5ec79376.js"><link rel="prefetch" href="/docs/assets/js/246.d3a0ab16.js"><link rel="prefetch" href="/docs/assets/js/247.d3c01944.js"><link rel="prefetch" href="/docs/assets/js/248.40872580.js"><link rel="prefetch" href="/docs/assets/js/249.3b68b372.js"><link rel="prefetch" href="/docs/assets/js/25.99c04aa8.js"><link rel="prefetch" href="/docs/assets/js/250.dc9958a3.js"><link rel="prefetch" href="/docs/assets/js/251.a8fd4125.js"><link rel="prefetch" href="/docs/assets/js/252.5d4dfc08.js"><link rel="prefetch" href="/docs/assets/js/253.07714ef5.js"><link rel="prefetch" href="/docs/assets/js/254.75d85f1c.js"><link rel="prefetch" href="/docs/assets/js/255.cfcc36f7.js"><link rel="prefetch" href="/docs/assets/js/256.ddef3a85.js"><link rel="prefetch" href="/docs/assets/js/257.5ceedb2a.js"><link rel="prefetch" href="/docs/assets/js/258.fe0f7f2a.js"><link rel="prefetch" href="/docs/assets/js/259.cd625e04.js"><link rel="prefetch" href="/docs/assets/js/26.de598b27.js"><link rel="prefetch" href="/docs/assets/js/260.dcc5be0e.js"><link rel="prefetch" href="/docs/assets/js/261.6c964298.js"><link rel="prefetch" href="/docs/assets/js/262.8d42b60a.js"><link rel="prefetch" href="/docs/assets/js/263.8116548c.js"><link rel="prefetch" href="/docs/assets/js/264.3cfd6b45.js"><link rel="prefetch" href="/docs/assets/js/265.20068543.js"><link rel="prefetch" href="/docs/assets/js/266.1341af53.js"><link rel="prefetch" href="/docs/assets/js/267.082367d5.js"><link rel="prefetch" href="/docs/assets/js/268.f1372479.js"><link rel="prefetch" href="/docs/assets/js/269.89304ea3.js"><link rel="prefetch" href="/docs/assets/js/27.22848a21.js"><link rel="prefetch" href="/docs/assets/js/270.8b017566.js"><link rel="prefetch" href="/docs/assets/js/271.49e93aec.js"><link rel="prefetch" href="/docs/assets/js/272.2dc58f6c.js"><link rel="prefetch" href="/docs/assets/js/273.73179614.js"><link rel="prefetch" href="/docs/assets/js/274.79bdf4de.js"><link rel="prefetch" href="/docs/assets/js/275.78954d5a.js"><link rel="prefetch" href="/docs/assets/js/276.0c780439.js"><link rel="prefetch" href="/docs/assets/js/277.363d4e68.js"><link rel="prefetch" href="/docs/assets/js/278.db41e8ac.js"><link rel="prefetch" href="/docs/assets/js/279.e8ffba74.js"><link rel="prefetch" href="/docs/assets/js/28.815e2684.js"><link rel="prefetch" href="/docs/assets/js/280.e4763ee5.js"><link rel="prefetch" href="/docs/assets/js/281.11ea6996.js"><link rel="prefetch" href="/docs/assets/js/282.e781b395.js"><link rel="prefetch" href="/docs/assets/js/283.3b0e90fc.js"><link rel="prefetch" href="/docs/assets/js/284.33e3a211.js"><link rel="prefetch" href="/docs/assets/js/285.d8cb9080.js"><link rel="prefetch" href="/docs/assets/js/286.0d1b4ac6.js"><link rel="prefetch" href="/docs/assets/js/287.825418e6.js"><link rel="prefetch" href="/docs/assets/js/288.7c77863b.js"><link rel="prefetch" href="/docs/assets/js/289.cf49c3d6.js"><link rel="prefetch" href="/docs/assets/js/29.6ad7de03.js"><link rel="prefetch" href="/docs/assets/js/290.ed61aaf4.js"><link rel="prefetch" href="/docs/assets/js/291.e4fd0cdc.js"><link rel="prefetch" href="/docs/assets/js/292.5866fa6d.js"><link rel="prefetch" href="/docs/assets/js/293.b8f51c9a.js"><link rel="prefetch" href="/docs/assets/js/294.4945ffed.js"><link rel="prefetch" href="/docs/assets/js/295.f13e6c11.js"><link rel="prefetch" href="/docs/assets/js/296.dc3a45fd.js"><link rel="prefetch" href="/docs/assets/js/297.239f9276.js"><link rel="prefetch" href="/docs/assets/js/298.21d6bc9a.js"><link rel="prefetch" href="/docs/assets/js/299.7a2b8568.js"><link rel="prefetch" href="/docs/assets/js/30.977b46ab.js"><link rel="prefetch" href="/docs/assets/js/300.81317a24.js"><link rel="prefetch" href="/docs/assets/js/301.db7eb355.js"><link rel="prefetch" href="/docs/assets/js/302.4d59348a.js"><link rel="prefetch" href="/docs/assets/js/303.83ee6c35.js"><link rel="prefetch" href="/docs/assets/js/304.779db6eb.js"><link rel="prefetch" href="/docs/assets/js/305.79fc6a02.js"><link rel="prefetch" href="/docs/assets/js/306.0e693e1d.js"><link rel="prefetch" href="/docs/assets/js/307.09347bc1.js"><link rel="prefetch" href="/docs/assets/js/308.6278f155.js"><link rel="prefetch" href="/docs/assets/js/309.773b006a.js"><link rel="prefetch" href="/docs/assets/js/31.5e9d2740.js"><link rel="prefetch" href="/docs/assets/js/310.7fbe5899.js"><link rel="prefetch" href="/docs/assets/js/311.7175f8bc.js"><link rel="prefetch" href="/docs/assets/js/312.b52c6829.js"><link rel="prefetch" href="/docs/assets/js/313.50bdf801.js"><link rel="prefetch" href="/docs/assets/js/314.89adebad.js"><link rel="prefetch" href="/docs/assets/js/315.c0199ecd.js"><link rel="prefetch" href="/docs/assets/js/316.169abbd7.js"><link rel="prefetch" href="/docs/assets/js/317.3664e62b.js"><link rel="prefetch" href="/docs/assets/js/318.aa0e7de8.js"><link rel="prefetch" href="/docs/assets/js/319.f6c9d11a.js"><link rel="prefetch" href="/docs/assets/js/32.a2fc7ecb.js"><link rel="prefetch" href="/docs/assets/js/320.7850570d.js"><link rel="prefetch" href="/docs/assets/js/321.cf869c91.js"><link rel="prefetch" href="/docs/assets/js/322.8b97fa07.js"><link rel="prefetch" href="/docs/assets/js/323.99e99a9d.js"><link rel="prefetch" href="/docs/assets/js/324.6c506ddd.js"><link rel="prefetch" href="/docs/assets/js/325.37efbf3c.js"><link rel="prefetch" href="/docs/assets/js/326.b5499160.js"><link rel="prefetch" href="/docs/assets/js/327.4b2ff709.js"><link rel="prefetch" href="/docs/assets/js/328.b586f509.js"><link rel="prefetch" href="/docs/assets/js/329.e987b5a4.js"><link rel="prefetch" href="/docs/assets/js/33.ff35e389.js"><link rel="prefetch" href="/docs/assets/js/330.3727e7e1.js"><link rel="prefetch" href="/docs/assets/js/331.39c8e6d9.js"><link rel="prefetch" href="/docs/assets/js/332.5ab1b17f.js"><link rel="prefetch" href="/docs/assets/js/333.ad0331fe.js"><link rel="prefetch" href="/docs/assets/js/334.f70f696c.js"><link rel="prefetch" href="/docs/assets/js/335.b364cf17.js"><link rel="prefetch" href="/docs/assets/js/336.1222c6b3.js"><link rel="prefetch" href="/docs/assets/js/337.08473d8d.js"><link rel="prefetch" href="/docs/assets/js/338.0584c424.js"><link rel="prefetch" href="/docs/assets/js/339.64f74739.js"><link rel="prefetch" href="/docs/assets/js/34.f9bc9c74.js"><link rel="prefetch" href="/docs/assets/js/340.f4997bbc.js"><link rel="prefetch" href="/docs/assets/js/341.688f1b82.js"><link rel="prefetch" href="/docs/assets/js/342.f0920d03.js"><link rel="prefetch" href="/docs/assets/js/343.3a2a3ca2.js"><link rel="prefetch" href="/docs/assets/js/344.bd566aba.js"><link rel="prefetch" href="/docs/assets/js/345.b6e1a5b0.js"><link rel="prefetch" href="/docs/assets/js/346.71a84172.js"><link rel="prefetch" href="/docs/assets/js/347.9d69f9a1.js"><link rel="prefetch" href="/docs/assets/js/348.76e806a4.js"><link rel="prefetch" href="/docs/assets/js/349.7642e372.js"><link rel="prefetch" href="/docs/assets/js/35.493317c5.js"><link rel="prefetch" href="/docs/assets/js/350.271bd843.js"><link rel="prefetch" href="/docs/assets/js/351.80c07ca2.js"><link rel="prefetch" href="/docs/assets/js/352.d9974c51.js"><link rel="prefetch" href="/docs/assets/js/353.a672c2bc.js"><link rel="prefetch" href="/docs/assets/js/354.6dc6de86.js"><link rel="prefetch" href="/docs/assets/js/36.1ba6b68f.js"><link rel="prefetch" href="/docs/assets/js/37.72d7c451.js"><link rel="prefetch" href="/docs/assets/js/38.807ab059.js"><link rel="prefetch" href="/docs/assets/js/39.bc630d82.js"><link rel="prefetch" href="/docs/assets/js/4.a767fddf.js"><link rel="prefetch" href="/docs/assets/js/40.457696f8.js"><link rel="prefetch" href="/docs/assets/js/41.e4441eee.js"><link rel="prefetch" href="/docs/assets/js/42.08af916f.js"><link rel="prefetch" href="/docs/assets/js/43.8f96d39b.js"><link rel="prefetch" href="/docs/assets/js/44.396c4e41.js"><link rel="prefetch" href="/docs/assets/js/45.2a04840e.js"><link rel="prefetch" href="/docs/assets/js/46.dad37462.js"><link rel="prefetch" href="/docs/assets/js/47.6e5be9e4.js"><link rel="prefetch" href="/docs/assets/js/48.5b1997b8.js"><link rel="prefetch" href="/docs/assets/js/49.161f5360.js"><link rel="prefetch" href="/docs/assets/js/5.76cd3aa5.js"><link rel="prefetch" href="/docs/assets/js/50.266fd6ba.js"><link rel="prefetch" href="/docs/assets/js/51.05b222f9.js"><link rel="prefetch" href="/docs/assets/js/52.476dd823.js"><link rel="prefetch" href="/docs/assets/js/53.ae1b62b2.js"><link rel="prefetch" href="/docs/assets/js/54.875a56f9.js"><link rel="prefetch" href="/docs/assets/js/55.0db5cc1a.js"><link rel="prefetch" href="/docs/assets/js/56.2912c80e.js"><link rel="prefetch" href="/docs/assets/js/57.1821390f.js"><link rel="prefetch" href="/docs/assets/js/58.4b8238bb.js"><link rel="prefetch" href="/docs/assets/js/59.9b1d28b0.js"><link rel="prefetch" href="/docs/assets/js/6.afa6fbcd.js"><link rel="prefetch" href="/docs/assets/js/60.8dff842a.js"><link rel="prefetch" href="/docs/assets/js/61.c8c934df.js"><link rel="prefetch" href="/docs/assets/js/62.33287d4e.js"><link rel="prefetch" href="/docs/assets/js/63.c1f920f4.js"><link rel="prefetch" href="/docs/assets/js/64.8ac09041.js"><link rel="prefetch" href="/docs/assets/js/65.41a5ba3d.js"><link rel="prefetch" href="/docs/assets/js/66.8d1e5eec.js"><link rel="prefetch" href="/docs/assets/js/67.49428c87.js"><link rel="prefetch" href="/docs/assets/js/68.005fb82a.js"><link rel="prefetch" href="/docs/assets/js/69.3206e9b3.js"><link rel="prefetch" href="/docs/assets/js/7.f405e22b.js"><link rel="prefetch" href="/docs/assets/js/70.48207548.js"><link rel="prefetch" href="/docs/assets/js/71.2eb17646.js"><link rel="prefetch" href="/docs/assets/js/72.bbf4376b.js"><link rel="prefetch" href="/docs/assets/js/73.c7647e3c.js"><link rel="prefetch" href="/docs/assets/js/74.dc0671cc.js"><link rel="prefetch" href="/docs/assets/js/75.382b9edf.js"><link rel="prefetch" href="/docs/assets/js/76.9c9bef3e.js"><link rel="prefetch" href="/docs/assets/js/77.eb70093a.js"><link rel="prefetch" href="/docs/assets/js/78.9b68abd2.js"><link rel="prefetch" href="/docs/assets/js/79.30a72af9.js"><link rel="prefetch" href="/docs/assets/js/8.14c57698.js"><link rel="prefetch" href="/docs/assets/js/80.da5b605e.js"><link rel="prefetch" href="/docs/assets/js/81.b89956b2.js"><link rel="prefetch" href="/docs/assets/js/82.7282ca02.js"><link rel="prefetch" href="/docs/assets/js/83.44a3c6cf.js"><link rel="prefetch" href="/docs/assets/js/84.0613b549.js"><link rel="prefetch" href="/docs/assets/js/85.21b6f245.js"><link rel="prefetch" href="/docs/assets/js/86.3521f8bb.js"><link rel="prefetch" href="/docs/assets/js/87.f69e94a1.js"><link rel="prefetch" href="/docs/assets/js/88.d5695cae.js"><link rel="prefetch" href="/docs/assets/js/89.76d3bd95.js"><link rel="prefetch" href="/docs/assets/js/90.49082ea5.js"><link rel="prefetch" href="/docs/assets/js/91.e32affd4.js"><link rel="prefetch" href="/docs/assets/js/92.6e95d441.js"><link rel="prefetch" href="/docs/assets/js/93.d41dfb2e.js"><link rel="prefetch" href="/docs/assets/js/94.023df9f5.js"><link rel="prefetch" href="/docs/assets/js/95.8bd5c086.js"><link rel="prefetch" href="/docs/assets/js/96.00281bc4.js"><link rel="prefetch" href="/docs/assets/js/97.0d8feb18.js"><link rel="prefetch" href="/docs/assets/js/98.6450ab82.js"><link rel="prefetch" href="/docs/assets/js/99.2930768c.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.84c9df9b.js">
-  <link rel="stylesheet" href="/docs/assets/css/0.styles.e477d1cf.css">
+      w.SELECTED_COLOR_SCHEME = preferredScheme;
+    }(window, document));
+  </script>
+  <meta name="description"
+    content="Handsontable follows the principles of Semantic Versioning (SemVer). Each version is numbered in the X.Y.Z (Major.Minor.Patch) format.">
+  <meta name="og:url" content="http://localhost:8080/javascript-data-grid/versioning-policy/">
+  <meta name="og:type" content="website">
+  <meta name="og:title" content="Versioning policy">
+  <meta name="og:description"
+    content="Handsontable follows the principles of Semantic Versioning (SemVer). Each version is numbered in the X.Y.Z (Major.Minor.Patch) format.">
+  <meta name="og:image" content="http://localhost:8080/img/handsontable-banner-og.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="/assets/css/0.styles.e477d1cf.css" as="style">
+  <link rel="preload" href="/assets/js/app.1079bcf6.js" as="script">
+  <link rel="preload" href="/assets/js/3.cb1a7b17.js" as="script">
+  <link rel="preload" href="/assets/js/2.11f10a22.js" as="script">
+  <link rel="preload" href="/assets/js/1.7ae82910.js" as="script">
+  <link rel="preload" href="/assets/js/214.c069fd03.js" as="script">
+  <link rel="prefetch" href="/assets/js/100.8ac561ae.js">
+  <link rel="prefetch" href="/assets/js/101.62d5b83e.js">
+  <link rel="prefetch" href="/assets/js/102.799e9c2e.js">
+  <link rel="prefetch" href="/assets/js/103.3f09db8d.js">
+  <link rel="prefetch" href="/assets/js/104.73dea498.js">
+  <link rel="prefetch" href="/assets/js/105.b554116f.js">
+  <link rel="prefetch" href="/assets/js/106.12a0836c.js">
+  <link rel="prefetch" href="/assets/js/107.162ddd3f.js">
+  <link rel="prefetch" href="/assets/js/108.c3a03578.js">
+  <link rel="prefetch" href="/assets/js/109.dca99c99.js">
+  <link rel="prefetch" href="/assets/js/11.de8e1bb9.js">
+  <link rel="prefetch" href="/assets/js/110.5e715857.js">
+  <link rel="prefetch" href="/assets/js/111.9215c373.js">
+  <link rel="prefetch" href="/assets/js/112.edaf0a42.js">
+  <link rel="prefetch" href="/assets/js/113.60629134.js">
+  <link rel="prefetch" href="/assets/js/114.d2b185bf.js">
+  <link rel="prefetch" href="/assets/js/115.74633063.js">
+  <link rel="prefetch" href="/assets/js/116.dccd7d39.js">
+  <link rel="prefetch" href="/assets/js/117.5a99750f.js">
+  <link rel="prefetch" href="/assets/js/118.b447f5b3.js">
+  <link rel="prefetch" href="/assets/js/119.1040c304.js">
+  <link rel="prefetch" href="/assets/js/12.6c68e268.js">
+  <link rel="prefetch" href="/assets/js/120.91cbe7d6.js">
+  <link rel="prefetch" href="/assets/js/121.46008d24.js">
+  <link rel="prefetch" href="/assets/js/122.aa1433b2.js">
+  <link rel="prefetch" href="/assets/js/123.45a47ce3.js">
+  <link rel="prefetch" href="/assets/js/124.b49776fe.js">
+  <link rel="prefetch" href="/assets/js/125.3ce13aa7.js">
+  <link rel="prefetch" href="/assets/js/126.bd57595e.js">
+  <link rel="prefetch" href="/assets/js/127.6e71e249.js">
+  <link rel="prefetch" href="/assets/js/128.f0228708.js">
+  <link rel="prefetch" href="/assets/js/129.3a347f2a.js">
+  <link rel="prefetch" href="/assets/js/13.b185b75d.js">
+  <link rel="prefetch" href="/assets/js/130.9f033719.js">
+  <link rel="prefetch" href="/assets/js/131.82506149.js">
+  <link rel="prefetch" href="/assets/js/132.7b6652e3.js">
+  <link rel="prefetch" href="/assets/js/133.4b2f8457.js">
+  <link rel="prefetch" href="/assets/js/134.7d9e0580.js">
+  <link rel="prefetch" href="/assets/js/135.4d109b3d.js">
+  <link rel="prefetch" href="/assets/js/136.de605410.js">
+  <link rel="prefetch" href="/assets/js/137.351a4558.js">
+  <link rel="prefetch" href="/assets/js/138.afa5d96a.js">
+  <link rel="prefetch" href="/assets/js/139.9c9067fa.js">
+  <link rel="prefetch" href="/assets/js/14.093a2b2f.js">
+  <link rel="prefetch" href="/assets/js/140.752a4a68.js">
+  <link rel="prefetch" href="/assets/js/141.7764811a.js">
+  <link rel="prefetch" href="/assets/js/142.42f19386.js">
+  <link rel="prefetch" href="/assets/js/143.f78137c0.js">
+  <link rel="prefetch" href="/assets/js/144.b2ea2325.js">
+  <link rel="prefetch" href="/assets/js/145.56f45097.js">
+  <link rel="prefetch" href="/assets/js/146.8bc59776.js">
+  <link rel="prefetch" href="/assets/js/147.e899446b.js">
+  <link rel="prefetch" href="/assets/js/148.4c083e63.js">
+  <link rel="prefetch" href="/assets/js/149.b5c18999.js">
+  <link rel="prefetch" href="/assets/js/15.79a9355a.js">
+  <link rel="prefetch" href="/assets/js/150.f2df885e.js">
+  <link rel="prefetch" href="/assets/js/151.781fbf52.js">
+  <link rel="prefetch" href="/assets/js/152.d3abf64b.js">
+  <link rel="prefetch" href="/assets/js/153.ce73548f.js">
+  <link rel="prefetch" href="/assets/js/154.4677f00e.js">
+  <link rel="prefetch" href="/assets/js/155.a5dedf78.js">
+  <link rel="prefetch" href="/assets/js/156.3f88271e.js">
+  <link rel="prefetch" href="/assets/js/157.1c552fa8.js">
+  <link rel="prefetch" href="/assets/js/158.50e14848.js">
+  <link rel="prefetch" href="/assets/js/159.46b1aa5c.js">
+  <link rel="prefetch" href="/assets/js/16.65f419f3.js">
+  <link rel="prefetch" href="/assets/js/160.bb3a5290.js">
+  <link rel="prefetch" href="/assets/js/161.82fce5d5.js">
+  <link rel="prefetch" href="/assets/js/162.42a8409a.js">
+  <link rel="prefetch" href="/assets/js/163.7b6d73dd.js">
+  <link rel="prefetch" href="/assets/js/164.7db13087.js">
+  <link rel="prefetch" href="/assets/js/165.141bdbec.js">
+  <link rel="prefetch" href="/assets/js/166.c299f188.js">
+  <link rel="prefetch" href="/assets/js/167.3a72d49b.js">
+  <link rel="prefetch" href="/assets/js/168.56cc3ab9.js">
+  <link rel="prefetch" href="/assets/js/169.92a3e612.js">
+  <link rel="prefetch" href="/assets/js/17.16cab6ef.js">
+  <link rel="prefetch" href="/assets/js/170.79c2939b.js">
+  <link rel="prefetch" href="/assets/js/171.f75a63d0.js">
+  <link rel="prefetch" href="/assets/js/172.e286a772.js">
+  <link rel="prefetch" href="/assets/js/173.f3ca0ad0.js">
+  <link rel="prefetch" href="/assets/js/174.4250f4b4.js">
+  <link rel="prefetch" href="/assets/js/175.c711c77e.js">
+  <link rel="prefetch" href="/assets/js/176.31b801ed.js">
+  <link rel="prefetch" href="/assets/js/177.c1eaeb77.js">
+  <link rel="prefetch" href="/assets/js/178.d7d5af85.js">
+  <link rel="prefetch" href="/assets/js/179.b0548e82.js">
+  <link rel="prefetch" href="/assets/js/18.d116056d.js">
+  <link rel="prefetch" href="/assets/js/180.e3f06627.js">
+  <link rel="prefetch" href="/assets/js/181.6769a3c6.js">
+  <link rel="prefetch" href="/assets/js/182.f1e0cc3f.js">
+  <link rel="prefetch" href="/assets/js/183.60d5a625.js">
+  <link rel="prefetch" href="/assets/js/184.c873c4b5.js">
+  <link rel="prefetch" href="/assets/js/185.e13c56e5.js">
+  <link rel="prefetch" href="/assets/js/186.7aae082f.js">
+  <link rel="prefetch" href="/assets/js/187.4788f81b.js">
+  <link rel="prefetch" href="/assets/js/188.4222dc80.js">
+  <link rel="prefetch" href="/assets/js/189.b1ba259a.js">
+  <link rel="prefetch" href="/assets/js/19.a571a1d6.js">
+  <link rel="prefetch" href="/assets/js/190.884f3eb3.js">
+  <link rel="prefetch" href="/assets/js/191.aabb59f0.js">
+  <link rel="prefetch" href="/assets/js/192.80e0a70d.js">
+  <link rel="prefetch" href="/assets/js/193.f76b595c.js">
+  <link rel="prefetch" href="/assets/js/194.b79bcd33.js">
+  <link rel="prefetch" href="/assets/js/195.cecdba81.js">
+  <link rel="prefetch" href="/assets/js/196.4d6f758c.js">
+  <link rel="prefetch" href="/assets/js/197.4ad65be8.js">
+  <link rel="prefetch" href="/assets/js/198.7cf926ad.js">
+  <link rel="prefetch" href="/assets/js/199.ca58dacd.js">
+  <link rel="prefetch" href="/assets/js/20.8ee7e87a.js">
+  <link rel="prefetch" href="/assets/js/200.c637c378.js">
+  <link rel="prefetch" href="/assets/js/201.57b3ba86.js">
+  <link rel="prefetch" href="/assets/js/202.564a9bb8.js">
+  <link rel="prefetch" href="/assets/js/203.5d573ea8.js">
+  <link rel="prefetch" href="/assets/js/204.400ff980.js">
+  <link rel="prefetch" href="/assets/js/205.6e90b2ef.js">
+  <link rel="prefetch" href="/assets/js/206.a9b7f038.js">
+  <link rel="prefetch" href="/assets/js/207.4bb9612c.js">
+  <link rel="prefetch" href="/assets/js/208.e9db298d.js">
+  <link rel="prefetch" href="/assets/js/209.5eb439d5.js">
+  <link rel="prefetch" href="/assets/js/21.e5f456de.js">
+  <link rel="prefetch" href="/assets/js/210.847f6f95.js">
+  <link rel="prefetch" href="/assets/js/211.000d4f61.js">
+  <link rel="prefetch" href="/assets/js/212.c70abb20.js">
+  <link rel="prefetch" href="/assets/js/213.5b3b53c8.js">
+  <link rel="prefetch" href="/assets/js/215.69583de8.js">
+  <link rel="prefetch" href="/assets/js/216.1e050e0b.js">
+  <link rel="prefetch" href="/assets/js/217.210cab50.js">
+  <link rel="prefetch" href="/assets/js/218.70e4a884.js">
+  <link rel="prefetch" href="/assets/js/219.a3728d35.js">
+  <link rel="prefetch" href="/assets/js/22.fe00f80e.js">
+  <link rel="prefetch" href="/assets/js/220.05491a71.js">
+  <link rel="prefetch" href="/assets/js/221.095431bd.js">
+  <link rel="prefetch" href="/assets/js/222.50423628.js">
+  <link rel="prefetch" href="/assets/js/223.76ed175d.js">
+  <link rel="prefetch" href="/assets/js/224.0c0c9dbd.js">
+  <link rel="prefetch" href="/assets/js/225.5b6a6079.js">
+  <link rel="prefetch" href="/assets/js/226.cc89a133.js">
+  <link rel="prefetch" href="/assets/js/227.a9a18554.js">
+  <link rel="prefetch" href="/assets/js/228.cf98be51.js">
+  <link rel="prefetch" href="/assets/js/229.cef98ed5.js">
+  <link rel="prefetch" href="/assets/js/23.b02af3b4.js">
+  <link rel="prefetch" href="/assets/js/230.5aa7944b.js">
+  <link rel="prefetch" href="/assets/js/231.99f83c12.js">
+  <link rel="prefetch" href="/assets/js/232.39d8b085.js">
+  <link rel="prefetch" href="/assets/js/233.f6f4da03.js">
+  <link rel="prefetch" href="/assets/js/234.1e2f8af1.js">
+  <link rel="prefetch" href="/assets/js/235.d64de8a1.js">
+  <link rel="prefetch" href="/assets/js/236.b80a57de.js">
+  <link rel="prefetch" href="/assets/js/237.94c8cdea.js">
+  <link rel="prefetch" href="/assets/js/238.b1f2eb99.js">
+  <link rel="prefetch" href="/assets/js/239.087c675a.js">
+  <link rel="prefetch" href="/assets/js/24.a982ba29.js">
+  <link rel="prefetch" href="/assets/js/240.0762d99d.js">
+  <link rel="prefetch" href="/assets/js/241.996d57c0.js">
+  <link rel="prefetch" href="/assets/js/242.f26faf25.js">
+  <link rel="prefetch" href="/assets/js/243.7dea290b.js">
+  <link rel="prefetch" href="/assets/js/244.d08b7f3a.js">
+  <link rel="prefetch" href="/assets/js/245.5ec79376.js">
+  <link rel="prefetch" href="/assets/js/246.d3a0ab16.js">
+  <link rel="prefetch" href="/assets/js/247.d3c01944.js">
+  <link rel="prefetch" href="/assets/js/248.40872580.js">
+  <link rel="prefetch" href="/assets/js/249.3b68b372.js">
+  <link rel="prefetch" href="/assets/js/25.99c04aa8.js">
+  <link rel="prefetch" href="/assets/js/250.dc9958a3.js">
+  <link rel="prefetch" href="/assets/js/251.a8fd4125.js">
+  <link rel="prefetch" href="/assets/js/252.5d4dfc08.js">
+  <link rel="prefetch" href="/assets/js/253.07714ef5.js">
+  <link rel="prefetch" href="/assets/js/254.75d85f1c.js">
+  <link rel="prefetch" href="/assets/js/255.cfcc36f7.js">
+  <link rel="prefetch" href="/assets/js/256.ddef3a85.js">
+  <link rel="prefetch" href="/assets/js/257.5ceedb2a.js">
+  <link rel="prefetch" href="/assets/js/258.fe0f7f2a.js">
+  <link rel="prefetch" href="/assets/js/259.cd625e04.js">
+  <link rel="prefetch" href="/assets/js/26.de598b27.js">
+  <link rel="prefetch" href="/assets/js/260.dcc5be0e.js">
+  <link rel="prefetch" href="/assets/js/261.6c964298.js">
+  <link rel="prefetch" href="/assets/js/262.8d42b60a.js">
+  <link rel="prefetch" href="/assets/js/263.8116548c.js">
+  <link rel="prefetch" href="/assets/js/264.3cfd6b45.js">
+  <link rel="prefetch" href="/assets/js/265.20068543.js">
+  <link rel="prefetch" href="/assets/js/266.1341af53.js">
+  <link rel="prefetch" href="/assets/js/267.082367d5.js">
+  <link rel="prefetch" href="/assets/js/268.f1372479.js">
+  <link rel="prefetch" href="/assets/js/269.89304ea3.js">
+  <link rel="prefetch" href="/assets/js/27.22848a21.js">
+  <link rel="prefetch" href="/assets/js/270.8b017566.js">
+  <link rel="prefetch" href="/assets/js/271.49e93aec.js">
+  <link rel="prefetch" href="/assets/js/272.2dc58f6c.js">
+  <link rel="prefetch" href="/assets/js/273.73179614.js">
+  <link rel="prefetch" href="/assets/js/274.79bdf4de.js">
+  <link rel="prefetch" href="/assets/js/275.78954d5a.js">
+  <link rel="prefetch" href="/assets/js/276.0c780439.js">
+  <link rel="prefetch" href="/assets/js/277.363d4e68.js">
+  <link rel="prefetch" href="/assets/js/278.db41e8ac.js">
+  <link rel="prefetch" href="/assets/js/279.e8ffba74.js">
+  <link rel="prefetch" href="/assets/js/28.815e2684.js">
+  <link rel="prefetch" href="/assets/js/280.e4763ee5.js">
+  <link rel="prefetch" href="/assets/js/281.11ea6996.js">
+  <link rel="prefetch" href="/assets/js/282.e781b395.js">
+  <link rel="prefetch" href="/assets/js/283.3b0e90fc.js">
+  <link rel="prefetch" href="/assets/js/284.33e3a211.js">
+  <link rel="prefetch" href="/assets/js/285.d8cb9080.js">
+  <link rel="prefetch" href="/assets/js/286.0d1b4ac6.js">
+  <link rel="prefetch" href="/assets/js/287.825418e6.js">
+  <link rel="prefetch" href="/assets/js/288.7c77863b.js">
+  <link rel="prefetch" href="/assets/js/289.cf49c3d6.js">
+  <link rel="prefetch" href="/assets/js/29.6ad7de03.js">
+  <link rel="prefetch" href="/assets/js/290.ed61aaf4.js">
+  <link rel="prefetch" href="/assets/js/291.e4fd0cdc.js">
+  <link rel="prefetch" href="/assets/js/292.5866fa6d.js">
+  <link rel="prefetch" href="/assets/js/293.b8f51c9a.js">
+  <link rel="prefetch" href="/assets/js/294.4945ffed.js">
+  <link rel="prefetch" href="/assets/js/295.f13e6c11.js">
+  <link rel="prefetch" href="/assets/js/296.dc3a45fd.js">
+  <link rel="prefetch" href="/assets/js/297.239f9276.js">
+  <link rel="prefetch" href="/assets/js/298.21d6bc9a.js">
+  <link rel="prefetch" href="/assets/js/299.7a2b8568.js">
+  <link rel="prefetch" href="/assets/js/30.977b46ab.js">
+  <link rel="prefetch" href="/assets/js/300.81317a24.js">
+  <link rel="prefetch" href="/assets/js/301.db7eb355.js">
+  <link rel="prefetch" href="/assets/js/302.4d59348a.js">
+  <link rel="prefetch" href="/assets/js/303.83ee6c35.js">
+  <link rel="prefetch" href="/assets/js/304.779db6eb.js">
+  <link rel="prefetch" href="/assets/js/305.79fc6a02.js">
+  <link rel="prefetch" href="/assets/js/306.0e693e1d.js">
+  <link rel="prefetch" href="/assets/js/307.09347bc1.js">
+  <link rel="prefetch" href="/assets/js/308.6278f155.js">
+  <link rel="prefetch" href="/assets/js/309.773b006a.js">
+  <link rel="prefetch" href="/assets/js/31.5e9d2740.js">
+  <link rel="prefetch" href="/assets/js/310.7fbe5899.js">
+  <link rel="prefetch" href="/assets/js/311.7175f8bc.js">
+  <link rel="prefetch" href="/assets/js/312.b52c6829.js">
+  <link rel="prefetch" href="/assets/js/313.50bdf801.js">
+  <link rel="prefetch" href="/assets/js/314.89adebad.js">
+  <link rel="prefetch" href="/assets/js/315.c0199ecd.js">
+  <link rel="prefetch" href="/assets/js/316.169abbd7.js">
+  <link rel="prefetch" href="/assets/js/317.3664e62b.js">
+  <link rel="prefetch" href="/assets/js/318.aa0e7de8.js">
+  <link rel="prefetch" href="/assets/js/319.f6c9d11a.js">
+  <link rel="prefetch" href="/assets/js/32.a2fc7ecb.js">
+  <link rel="prefetch" href="/assets/js/320.7850570d.js">
+  <link rel="prefetch" href="/assets/js/321.cf869c91.js">
+  <link rel="prefetch" href="/assets/js/322.8b97fa07.js">
+  <link rel="prefetch" href="/assets/js/323.99e99a9d.js">
+  <link rel="prefetch" href="/assets/js/324.6c506ddd.js">
+  <link rel="prefetch" href="/assets/js/325.37efbf3c.js">
+  <link rel="prefetch" href="/assets/js/326.b5499160.js">
+  <link rel="prefetch" href="/assets/js/327.4b2ff709.js">
+  <link rel="prefetch" href="/assets/js/328.b586f509.js">
+  <link rel="prefetch" href="/assets/js/329.e987b5a4.js">
+  <link rel="prefetch" href="/assets/js/33.ff35e389.js">
+  <link rel="prefetch" href="/assets/js/330.3727e7e1.js">
+  <link rel="prefetch" href="/assets/js/331.39c8e6d9.js">
+  <link rel="prefetch" href="/assets/js/332.5ab1b17f.js">
+  <link rel="prefetch" href="/assets/js/333.ad0331fe.js">
+  <link rel="prefetch" href="/assets/js/334.f70f696c.js">
+  <link rel="prefetch" href="/assets/js/335.b364cf17.js">
+  <link rel="prefetch" href="/assets/js/336.1222c6b3.js">
+  <link rel="prefetch" href="/assets/js/337.08473d8d.js">
+  <link rel="prefetch" href="/assets/js/338.0584c424.js">
+  <link rel="prefetch" href="/assets/js/339.64f74739.js">
+  <link rel="prefetch" href="/assets/js/34.f9bc9c74.js">
+  <link rel="prefetch" href="/assets/js/340.f4997bbc.js">
+  <link rel="prefetch" href="/assets/js/341.688f1b82.js">
+  <link rel="prefetch" href="/assets/js/342.f0920d03.js">
+  <link rel="prefetch" href="/assets/js/343.3a2a3ca2.js">
+  <link rel="prefetch" href="/assets/js/344.bd566aba.js">
+  <link rel="prefetch" href="/assets/js/345.b6e1a5b0.js">
+  <link rel="prefetch" href="/assets/js/346.71a84172.js">
+  <link rel="prefetch" href="/assets/js/347.9d69f9a1.js">
+  <link rel="prefetch" href="/assets/js/348.76e806a4.js">
+  <link rel="prefetch" href="/assets/js/349.7642e372.js">
+  <link rel="prefetch" href="/assets/js/35.493317c5.js">
+  <link rel="prefetch" href="/assets/js/350.271bd843.js">
+  <link rel="prefetch" href="/assets/js/351.80c07ca2.js">
+  <link rel="prefetch" href="/assets/js/352.d9974c51.js">
+  <link rel="prefetch" href="/assets/js/353.a672c2bc.js">
+  <link rel="prefetch" href="/assets/js/354.6dc6de86.js">
+  <link rel="prefetch" href="/assets/js/36.1ba6b68f.js">
+  <link rel="prefetch" href="/assets/js/37.72d7c451.js">
+  <link rel="prefetch" href="/assets/js/38.807ab059.js">
+  <link rel="prefetch" href="/assets/js/39.bc630d82.js">
+  <link rel="prefetch" href="/assets/js/4.a767fddf.js">
+  <link rel="prefetch" href="/assets/js/40.457696f8.js">
+  <link rel="prefetch" href="/assets/js/41.e4441eee.js">
+  <link rel="prefetch" href="/assets/js/42.08af916f.js">
+  <link rel="prefetch" href="/assets/js/43.8f96d39b.js">
+  <link rel="prefetch" href="/assets/js/44.396c4e41.js">
+  <link rel="prefetch" href="/assets/js/45.2a04840e.js">
+  <link rel="prefetch" href="/assets/js/46.dad37462.js">
+  <link rel="prefetch" href="/assets/js/47.6e5be9e4.js">
+  <link rel="prefetch" href="/assets/js/48.5b1997b8.js">
+  <link rel="prefetch" href="/assets/js/49.161f5360.js">
+  <link rel="prefetch" href="/assets/js/5.76cd3aa5.js">
+  <link rel="prefetch" href="/assets/js/50.266fd6ba.js">
+  <link rel="prefetch" href="/assets/js/51.05b222f9.js">
+  <link rel="prefetch" href="/assets/js/52.476dd823.js">
+  <link rel="prefetch" href="/assets/js/53.ae1b62b2.js">
+  <link rel="prefetch" href="/assets/js/54.875a56f9.js">
+  <link rel="prefetch" href="/assets/js/55.0db5cc1a.js">
+  <link rel="prefetch" href="/assets/js/56.2912c80e.js">
+  <link rel="prefetch" href="/assets/js/57.1821390f.js">
+  <link rel="prefetch" href="/assets/js/58.4b8238bb.js">
+  <link rel="prefetch" href="/assets/js/59.9b1d28b0.js">
+  <link rel="prefetch" href="/assets/js/6.afa6fbcd.js">
+  <link rel="prefetch" href="/assets/js/60.8dff842a.js">
+  <link rel="prefetch" href="/assets/js/61.c8c934df.js">
+  <link rel="prefetch" href="/assets/js/62.33287d4e.js">
+  <link rel="prefetch" href="/assets/js/63.c1f920f4.js">
+  <link rel="prefetch" href="/assets/js/64.8ac09041.js">
+  <link rel="prefetch" href="/assets/js/65.41a5ba3d.js">
+  <link rel="prefetch" href="/assets/js/66.8d1e5eec.js">
+  <link rel="prefetch" href="/assets/js/67.49428c87.js">
+  <link rel="prefetch" href="/assets/js/68.005fb82a.js">
+  <link rel="prefetch" href="/assets/js/69.3206e9b3.js">
+  <link rel="prefetch" href="/assets/js/7.f405e22b.js">
+  <link rel="prefetch" href="/assets/js/70.48207548.js">
+  <link rel="prefetch" href="/assets/js/71.2eb17646.js">
+  <link rel="prefetch" href="/assets/js/72.bbf4376b.js">
+  <link rel="prefetch" href="/assets/js/73.c7647e3c.js">
+  <link rel="prefetch" href="/assets/js/74.dc0671cc.js">
+  <link rel="prefetch" href="/assets/js/75.382b9edf.js">
+  <link rel="prefetch" href="/assets/js/76.9c9bef3e.js">
+  <link rel="prefetch" href="/assets/js/77.eb70093a.js">
+  <link rel="prefetch" href="/assets/js/78.9b68abd2.js">
+  <link rel="prefetch" href="/assets/js/79.30a72af9.js">
+  <link rel="prefetch" href="/assets/js/8.14c57698.js">
+  <link rel="prefetch" href="/assets/js/80.da5b605e.js">
+  <link rel="prefetch" href="/assets/js/81.b89956b2.js">
+  <link rel="prefetch" href="/assets/js/82.7282ca02.js">
+  <link rel="prefetch" href="/assets/js/83.44a3c6cf.js">
+  <link rel="prefetch" href="/assets/js/84.0613b549.js">
+  <link rel="prefetch" href="/assets/js/85.21b6f245.js">
+  <link rel="prefetch" href="/assets/js/86.3521f8bb.js">
+  <link rel="prefetch" href="/assets/js/87.f69e94a1.js">
+  <link rel="prefetch" href="/assets/js/88.d5695cae.js">
+  <link rel="prefetch" href="/assets/js/89.76d3bd95.js">
+  <link rel="prefetch" href="/assets/js/90.49082ea5.js">
+  <link rel="prefetch" href="/assets/js/91.e32affd4.js">
+  <link rel="prefetch" href="/assets/js/92.6e95d441.js">
+  <link rel="prefetch" href="/assets/js/93.d41dfb2e.js">
+  <link rel="prefetch" href="/assets/js/94.023df9f5.js">
+  <link rel="prefetch" href="/assets/js/95.8bd5c086.js">
+  <link rel="prefetch" href="/assets/js/96.00281bc4.js">
+  <link rel="prefetch" href="/assets/js/97.0d8feb18.js">
+  <link rel="prefetch" href="/assets/js/98.6450ab82.js">
+  <link rel="prefetch" href="/assets/js/99.2930768c.js">
+  <link rel="prefetch" href="/assets/js/vendors~docsearch.84c9df9b.js">
+  <link rel="stylesheet" href="/assets/css/0.styles.e477d1cf.css">
 </head>
+
 <body>
-<!-- Google Tag Manager -->
-<noscript>
-  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-55L5D3"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<div id="app" data-server-rendered="true"><div class="layout-container"><div class="theme-container"><header class="navbar"><div class="navbar-wrapper"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/javascript-data-grid/" class="home-link router-link-active"><svg viewBox="0 0 1300 197.33" xmlns="http://www.w3.org/2000/svg" id="handsontable-logo"><title>Handsontable - a JavaScript data grid that provides spreadsheet-like UX</title> <path transform="translate(-50 -101.33)" d="m50
-108.22h37.31v49.447h42.56v-49.447h37.125v129.49h-37.125v-51.068h-42.56v51.068h-37.31z"></path> <path transform="translate(-50 -101.33)" d="m182.72 211.45c0-22.271 18.838-30.969
+  <!-- Google Tag Manager -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-55L5D3" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <div id="app" data-server-rendered="true">
+    <div class="layout-container">
+      <div class="theme-container">
+        <header class="navbar">
+          <div class="navbar-wrapper">
+            <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+                viewBox="0 0 448 512" class="icon">
+                <path fill="currentColor"
+                  d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
+                </path>
+              </svg></div> <a href="/javascript-data-grid/" class="home-link router-link-active"><svg
+                viewBox="0 0 1300 197.33" xmlns="http://www.w3.org/2000/svg" id="handsontable-logo">
+                <title>Handsontable - a JavaScript data grid that provides spreadsheet-like UX</title>
+                <path transform="translate(-50 -101.33)" d="m50
+108.22h37.31v49.447h42.56v-49.447h37.125v129.49h-37.125v-51.068h-42.56v51.068h-37.31z"></path>
+                <path transform="translate(-50 -101.33)" d="m182.72 211.45c0-22.271 18.838-30.969
 50.348-30.969h9.0588v-2.172c0-9.0482-2.172-15.034-12.497-15.034-8.8734 0-12.137 5.2551-12.857
 11.231h-30.429c1.4515-22.822 19.378-34.042 45.278-34.042 26.08 0 42.74 10.68 42.74 35.854v61.398h-31.51v-11.051c-4.5294
 6.8868-12.862 13.223-28.072 13.223-17.026 0-32.061-8.3277-32.061-28.437zm59.406-6.8762v-5.7955h-8.5131c-13.037 0-18.833
-2.5322-18.833 10.32 0 5.4353 3.6182 8.8786 11.225 8.8786 9.2389 3e-5 16.12-5.2551 16.12-13.403z"></path> <path transform="translate(-50 -101.33)" d="m292.82 142.99h32.421v15.214c5.0697-9.7792 15.389-17.747 31.149-17.747
+2.5322-18.833 10.32 0 5.4353 3.6182 8.8786 11.225 8.8786 9.2389 3e-5 16.12-5.2551 16.12-13.403z"></path>
+                <path transform="translate(-50 -101.33)" d="m292.82 142.99h32.421v15.214c5.0697-9.7792 15.389-17.747 31.149-17.747
 18.292 0 30.969 11.411 30.969 35.674v61.578h-32.421v-55.052c0-10.69-4.1639-15.946-13.583-15.946-9.5991 0-16.115
-5.7955-16.115 17.937v53.06h-32.421z"></path> <path transform="translate(-50 -101.33)" d="m401.09 191.35v-1.4515c0-32.23 17.747-49.436 40.208-49.436 14.849 0
+5.7955-16.115 17.937v53.06h-32.421z"></path>
+                <path transform="translate(-50 -101.33)" d="m401.09 191.35v-1.4515c0-32.23 17.747-49.436 40.208-49.436 14.849 0
 23.722 6.3358 29.158 15.935v-55.062h32.416v136.38h-32.416v-15.395c-4.7095 9.7792-15.214 17.567-29.523 17.567-21.911
 0-39.843-15.755-39.843-48.536zm70.272-0.54035v-1.4515c0-15.935-6.7014-24.453-18.658-24.453-12.131 0-18.653
-8.1582-18.653 24.633v1.4515c0 15.935 7.0616 24.083 18.292 24.083 11.771-1e-5 19.018-8.1476 19.018-24.263z"></path> <path transform="translate(-50 -101.33)" d="m515.71 207.64h29.883c1.086 6.8868 4.1692 10.69 13.403 10.69 7.9675 0
+8.1582-18.653 24.633v1.4515c0 15.935 7.0616 24.083 18.292 24.083 11.771-1e-5 19.018-8.1476 19.018-24.263z"></path>
+                <path transform="translate(-50 -101.33)" d="m515.71 207.64h29.883c1.086 6.8868 4.1692 10.69 13.403 10.69 7.9675 0
 11.591-3.0832 11.591-7.7874 0-4.5241-4.5241-6.7067-17.567-8.5078-25.354-3.2633-36.039-10.69-36.039-30.429 0-21.01
 18.653-31.149 40.568-31.149 23.362 0 39.663 7.9675 41.835
 30.609h-29.338c-1.2714-6.3464-4.7095-9.419-12.137-9.419-7.0616 0-10.685 3.0726-10.685 7.4165 0 4.5347 4.344 6.3464
 15.935 7.7874 26.265 3.2633 38.942 10.15 38.942 30.429 0 22.462-16.661 32.601-42.926 32.601-26.986-4e-5
--42.74-11.231-43.466-32.241z"></path> <path transform="translate(-50 -101.33)" d="m611.14 191.53v-1.4515c0-30.418 22.636-49.617 51.974-49.617 29.163 0
+-42.74-11.231-43.466-32.241z"></path>
+                <path transform="translate(-50 -101.33)" d="m611.14 191.53v-1.4515c0-30.418 22.636-49.617 51.974-49.617 29.163 0
 51.619 18.647 51.619 48.716v1.4515c0 30.789-22.642 49.256-51.799
 49.256s-51.794-17.747-51.794-48.356zm70.632-0.54035v-1.4515c0-15.935-6.3411-24.814-18.658-24.814-12.131 0-18.833
-8.5184-18.833 24.453v1.4515c0 16.295 6.3411 25.174 18.833 25.174 12.137 0 18.658-9.0588 18.658-24.814z"></path> <path transform="translate(-50 -101.33)" d="m728.84 142.99h32.421v15.214c5.0697-9.7792 15.389-17.747 31.149-17.747
+8.5184-18.833 24.453v1.4515c0 16.295 6.3411 25.174 18.833 25.174 12.137 0 18.658-9.0588 18.658-24.814z"></path>
+                <path transform="translate(-50 -101.33)" d="m728.84 142.99h32.421v15.214c5.0697-9.7792 15.389-17.747 31.149-17.747
 18.292 0 30.969 11.411 30.969 35.674v61.578h-32.421v-55.052c0-10.69-4.1638-15.946-13.583-15.946-9.5991 0-16.115
-5.7955-16.115 17.937v53.06h-32.421z"></path> <path transform="translate(-50 -101.33)" d="m846.16
+5.7955-16.115 17.937v53.06h-32.421z"></path>
+                <path transform="translate(-50 -101.33)" d="m846.16
 207.28v-42.2h-11.406v-22.091h11.406v-19.739h32.421v19.739h18.653v22.091h-18.653v39.128c0 6.8762 3.4434 9.9594 9.5991
 9.9594a24.634 24.634 0 0 0 9.2389-1.6316v24.633a68.338 68.338 0 0 1-17.932 2.7123c-21.37
-0-33.327-10.32-33.327-32.601z"></path> <path transform="translate(-50 -101.33)" d="m906.82 211.45c0-22.271 18.838-30.969
+0-33.327-10.32-33.327-32.601z"></path>
+                <path transform="translate(-50 -101.33)" d="m906.82 211.45c0-22.271 18.838-30.969
 50.348-30.969h9.0588v-2.172c0-9.0482-2.172-15.034-12.497-15.034-8.8734 0-12.137 5.2551-12.857
 11.231h-30.429c1.4515-22.822 19.378-34.042 45.278-34.042 26.08 0 42.74 10.68 42.74 35.854v61.398h-31.51v-11.051c-4.5294
 6.8868-12.862 13.223-28.072 13.223-17.026 0-32.061-8.3277-32.061-28.437zm59.406-6.8762v-5.7955h-8.5131c-13.037 0-18.833
-2.5322-18.833 10.32 0 5.4353 3.6182 8.8786 11.225 8.8786 9.2389 3e-5 16.12-5.2551 16.12-13.403z"></path> <path transform="translate(-50 -101.33)" d="m1049.3 223.04v14.674h-32.421v-136.38h32.421v55.783a33.427 33.427 0 0 1
+2.5322-18.833 10.32 0 5.4353 3.6182 8.8786 11.225 8.8786 9.2389 3e-5 16.12-5.2551 16.12-13.403z"></path>
+                <path transform="translate(-50 -101.33)" d="m1049.3 223.04v14.674h-32.421v-136.38h32.421v55.783a33.427 33.427 0 0 1
 29.518-16.655c22.096 0 40.028 16.655 40.028 49.076v1.4515c0 32.601-17.932 48.896-40.208 48.896-14.128-1e-5
 -24.633-6.6961-29.338-16.846zm36.579-32.05v-1.4515c0-16.666-7.2417-24.633-18.653-24.633-11.771 0-18.833 8.5184-18.833
-24.453v1.4515c0 16.115 7.0616 24.263 18.833 24.263 12.137-1e-5 18.653-8.5078 18.653-24.083z"></path> <path transform="translate(-50 -101.33)" d="m1134.2 101.33h32.235v136.38h-32.235z"></path> <path transform="translate(-50 -101.33)" d="m1181.5 191.53v-1.4515c0-30.418 22.636-49.617 51.254-49.617 25.9 0
+24.453v1.4515c0 16.115 7.0616 24.263 18.833 24.263 12.137-1e-5 18.653-8.5078 18.653-24.083z"></path>
+                <path transform="translate(-50 -101.33)" d="m1134.2 101.33h32.235v136.38h-32.235z"></path>
+                <path transform="translate(-50 -101.33)" d="m1181.5 191.53v-1.4515c0-30.418 22.636-49.617 51.254-49.617 25.9 0
 48.176 14.844 48.176 48.896v8.5078h-66.648c0.90587 12.502 8.1476 19.749 19.739 19.749 10.685 0 15.214-4.8949
 16.481-11.231h30.429c-2.8977 21.37-19.378 33.502-47.996 33.502-29.703
 0-51.434-17.386-51.434-48.356zm67.914-11.951c-0.54564-11.411-6.1557-17.747-16.661-17.747-9.7792 0-16.481 6.3358-18.112
-17.747z"></path> <path fill="#1a42e8" transform="translate(-50 -101.33)" d="m1295.3 244h54.668v54.668h-54.668z"></path></svg></a> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/javascript-data-grid/" class="nav-link router-link-active">
-  Guides
-</a></div> <div class="nav-item"><a href="/docs/javascript-data-grid/api/" class="nav-link">
-  API reference
-</a></div></nav> <nav class="nav-frameworks nav-links"><img src="/docs/img/pages/introduction/javascript.svg"> <nav class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/next/javascript-data-grid/" target="_self" class="nav-link external">
-    JavaScript
-   <!----></a></li><li class="dropdown-item"><!----> <a href="/docs/next/react-data-grid/" target="_self" class="nav-link external">
-    React
-   <!----></a></li><li class="dropdown-item"><!----> <a href="/docs/next/javascript-data-grid/angular-installation/" target="_self" class="nav-link external">
-    Angular
-   <!----></a></li><li class="dropdown-item"><!----> <a href="/docs/next/javascript-data-grid/vue-installation/" target="_self" class="nav-link external">
-    Vue 2
-   <!----></a></li><li class="dropdown-item"><!----> <a href="/docs/next/javascript-data-grid/vue3-installation/" target="_self" class="nav-link external">
-    Vue 3
-   <!----></a></li></ul></div></nav></nav> <div class="nav-links-right"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <span title="press / or S to focus the search field" class="kbd-hint"><kbd>/</kbd> <kbd>S</kbd></span> <!----></div> <nav class="nav-versions nav-links can-hide"><nav class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="next" class="dropdown-title"><span class="title">next</span> <span class="arrow down"></span></button> <button type="button" aria-label="next" class="mobile-dropdown-title"><span class="title">next</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"></ul></div></nav></nav> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/handsontable/handsontable" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    GitHub
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Support" class="dropdown-title"><span class="title">Support</span> <span class="arrow down"></span></button> <button type="button" aria-label="Support" class="mobile-dropdown-title"><span class="title">Support</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://handsontable.com/contact?category=technical_support" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Contact support
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/handsontable/handsontable/issues/new/choose" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Report an issue
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://forum.handsontable.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Handsontable forum
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://stackoverflow.com/questions/tagged/handsontable" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Ask on Stack Overflow
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://handsontable.com/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Blog
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div></nav> <label id="switch" class="switch" data-v-6781f250><div class="inner" style="display:none;" data-v-6781f250><input type="checkbox" data-v-6781f250> <span class="slider round" data-v-6781f250></span></div></label></div></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><div class="framework-switcher-item"><span>Framework</span> <nav class="nav-frameworks nav-links sidebar-mode"><img src="/docs/img/pages/introduction/javascript.svg"> <nav class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/next/javascript-data-grid/" target="_self" class="nav-link external">
-    JavaScript
-   <!----></a></li><li class="dropdown-item"><!----> <a href="/docs/next/react-data-grid/" target="_self" class="nav-link external">
-    React
-   <!----></a></li><li class="dropdown-item"><!----> <a href="/docs/next/javascript-data-grid/angular-installation/" target="_self" class="nav-link external">
-    Angular
-   <!----></a></li><li class="dropdown-item"><!----> <a href="/docs/next/javascript-data-grid/vue-installation/" target="_self" class="nav-link external">
-    Vue 2
-   <!----></a></li><li class="dropdown-item"><!----> <a href="/docs/next/javascript-data-grid/vue3-installation/" target="_self" class="nav-link external">
-    Vue 3
-   <!----></a></li></ul></div></nav></nav></div> <nav class="nav-links sidebar-mode additional-menu"><div class="nav-item"><a href="/docs/javascript-data-grid/" class="nav-link router-link-active">
-  Guides
-</a></div> <div class="nav-item"><a href="/docs/javascript-data-grid/api/" class="nav-link">
-  API reference
-</a></div></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>开始</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>Integrate with Angular</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>Integrate with Vue 2</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>与 Vue 3 集成</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>列</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>行</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>单元格功能</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>单元格函数</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>单元格类型</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>公式</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>附件和菜单</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>国际化</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>工具和打包</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>优化</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>安全</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span class="arrow right"></span> <span>技术规范</span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span class="arrow down"></span> <span>升级与迁移</span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/javascript-data-grid/release-notes/" class="sidebar-link">Release notes</a></li><li><a href="/docs/javascript-data-grid/versioning-policy/" aria-current="page" class="active sidebar-link">Versioning policy</a></li><li><a href="/docs/javascript-data-grid/migration-from-7.4-to-8.0/" class="sidebar-link">Migrate from 7.4 to 8.0</a></li><li><a href="/docs/javascript-data-grid/migration-from-8.4-to-9.0/" class="sidebar-link">Migrating from 8.4 to 9.0</a></li><li><a href="/docs/javascript-data-grid/migration-from-9.0-to-10.0/" class="sidebar-link">Migrating from 9.0 to 10.0</a></li><li><a href="/docs/javascript-data-grid/migration-from-10.0-to-11.0/" class="sidebar-link">Migrating from 10.0 to 11.0</a></li><li><a href="/docs/javascript-data-grid/migration-from-11.1-to-12.0/" class="sidebar-link">Migrating from 11.1 to 12.0</a></li><li><a href="/docs/javascript-data-grid/migration-from-12.4-to-13.0/" class="sidebar-link">Migrating from 12.4 to 13.0</a></li></ul></section></li></ul>  <nav class="nav-links can-hide additional-menu"><div class="nav-item"><a href="https://github.com/handsontable/handsontable" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    GitHub
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Support" class="dropdown-title"><span class="title">Support</span> <span class="arrow down"></span></button> <button type="button" aria-label="Support" class="mobile-dropdown-title"><span class="title">Support</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://handsontable.com/contact?category=technical_support" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Contact support
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/handsontable/handsontable/issues/new/choose" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Report an issue
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://forum.handsontable.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Handsontable forum
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://stackoverflow.com/questions/tagged/handsontable" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Ask on Stack Overflow
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://handsontable.com/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
-    Blog
-   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div></nav> <nav class="nav-versions nav-links can-hide additional-menu"><nav class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="next" class="dropdown-title"><span class="title">next</span> <span class="arrow down"></span></button> <button type="button" aria-label="next" class="mobile-dropdown-title"><span class="title">next</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"></ul></div></nav></nav> <div class="theme-switcher-item">
-    Dark mode <label id="switch" class="switch" data-v-6781f250><div class="inner" style="display:none;" data-v-6781f250><input type="checkbox" data-v-6781f250> <span class="slider round" data-v-6781f250></span></div></label></div></aside> <main class="page"><div class="page-top" style="display:none;"><div class="custom-block tip version-alert"><p>There is a newer version of Handsontable available.
-            <a href="/docs/latest/">Switch to the latest version ⟶</a></p></div></div> <div class="theme-default-content content__default"><h1 id="versioning-policy"><span class="header-framework">JavaScript Data Grid</span><a href="#versioning-policy" class="header-anchor"></a> Versioning policy</h1> <p>Handsontable follows the principles of <a href="https://semver.org/" target="_blank" rel="nofollow noopener noreferrer">Semantic Versioning<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (SemVer).</p> <p></p><div class="table-of-contents"><div class="toc-container-header">In this article</div><ul><li><a href="#概述">概述</a></li><li><a href="#versioning-of-framework-variants">Versioning of framework variants</a></li></ul></div><p></p> <h2 id="概述"><a href="#概述" class="header-anchor"></a> 概述</h2> <p>We use the version format of X.Y.Z (Major.Minor.Patch), incrementing them when a certain type of change occurs to the code.</p> <p>The following table outlines which number would change when a Major, Minor, or Patch release occurs:</p> <table><thead><tr><th>Type</th> <th>Version number</th> <th>Description</th></tr></thead> <tbody><tr><td>Major</td> <td>X (X.y.z)</td> <td>Any backward-incompatible changes are introduced to the public API.</td></tr> <tr><td>Minor</td> <td>Y (x.Y.z)</td> <td>New backward-compatible functionality is introduced to the public API, or if any public API functionality is marked as deprecated.</td></tr> <tr><td>Patch</td> <td>Z (x.y.Z)</td> <td>Backward-compatible bug fixes are introduced. We define a bug fix as an internal change that fixes an incorrect behavior of Handsontable.</td></tr></tbody></table> <p></p> <h2 id="versioning-of-framework-variants"><a href="#versioning-of-framework-variants" class="header-anchor"></a> Versioning of framework variants</h2> <p>Up to Handsontable 8.3.2, each framework variant of Handsontable was versioned separately:</p> <ul><li><a href="/docs/javascript-data-grid/" class="router-link-active">Vanilla JavaScript</a></li> <li><a href="/docs/react-data-grid/">React wrapper</a></li> <li><a href="/docs/javascript-data-grid/angular-installation/">Angular wrapper</a></li> <li><a href="/docs/javascript-data-grid/vue-installation/">Vue 2 wrapper</a></li> <li><a href="/docs/javascript-data-grid/vue3-installation/">Vue 3 wrapper</a></li></ul> <p>Starting with version 8.4.0 (released in May 2021), all framework variants of Handsontable have the same version number.</p> <p></p> <p></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/handsontable/handsontable/edit/develop/docs/content/guides/upgrade-and-migration/versioning-policy.md" target="_blank" rel="noopener noreferrer">Suggest edits</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last update:</span> <span class="time">Oct 19, 2023</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
-      ←
-      <a href="/docs/javascript-data-grid/release-notes/" class="prev">
-        Release notes
-      </a></span> <span class="next"><a href="/docs/javascript-data-grid/migration-from-7.4-to-8.0/">
-        Migrate from 7.4 to 8.0
-      </a>
-      →
-    </span></p></div> </main></div></div><div class="global-ui"></div></div>
-<script src="/docs/assets/js/app.1079bcf6.js" defer></script><script src="/docs/assets/js/3.cb1a7b17.js" defer></script><script src="/docs/assets/js/2.11f10a22.js" defer></script><script src="/docs/assets/js/1.7ae82910.js" defer></script><script src="/docs/assets/js/214.c069fd03.js" defer></script>
+17.747z"></path>
+                <path fill="#1a42e8" transform="translate(-50 -101.33)" d="m1295.3 244h54.668v54.668h-54.668z"></path>
+              </svg></a>
+            <nav class="nav-links can-hide">
+              <div class="nav-item"><a href="/javascript-data-grid/" class="nav-link router-link-active">
+                  Guides
+                </a></div>
+              <div class="nav-item"><a href="/javascript-data-grid/api/" class="nav-link">
+                  API reference
+                </a></div>
+            </nav>
+            <nav class="nav-frameworks nav-links"><img src="/img/pages/introduction/javascript.svg">
+              <nav class="nav-item">
+                <div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span
+                      class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button"
+                    aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span
+                      class="arrow right"></span></button>
+                  <ul class="nav-dropdown" style="display:none;">
+                    <li class="dropdown-item"><!----> <a href="/next/javascript-data-grid/" target="_self"
+                        class="nav-link external">
+                        JavaScript
+                        <!----></a></li>
+                    <li class="dropdown-item"><!----> <a href="/next/react-data-grid/" target="_self"
+                        class="nav-link external">
+                        React
+                        <!----></a></li>
+                    <li class="dropdown-item"><!----> <a href="/next/javascript-data-grid/angular-installation/"
+                        target="_self" class="nav-link external">
+                        Angular
+                        <!----></a></li>
+                    <li class="dropdown-item"><!----> <a href="/next/javascript-data-grid/vue-installation/"
+                        target="_self" class="nav-link external">
+                        Vue 2
+                        <!----></a></li>
+                    <li class="dropdown-item"><!----> <a href="/next/javascript-data-grid/vue3-installation/"
+                        target="_self" class="nav-link external">
+                        Vue 3
+                        <!----></a></li>
+                  </ul>
+                </div>
+              </nav>
+            </nav>
+            <div class="nav-links-right">
+              <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <span
+                  title="press / or S to focus the search field" class="kbd-hint"><kbd>/</kbd> <kbd>S</kbd></span>
+                <!----></div>
+              <nav class="nav-versions nav-links can-hide">
+                <nav class="nav-item">
+                  <div class="dropdown-wrapper"><button type="button" aria-label="next" class="dropdown-title"><span
+                        class="title">next</span> <span class="arrow down"></span></button> <button type="button"
+                      aria-label="next" class="mobile-dropdown-title"><span class="title">next</span> <span
+                        class="arrow right"></span></button>
+                    <ul class="nav-dropdown" style="display:none;"></ul>
+                  </div>
+                </nav>
+              </nav>
+              <nav class="nav-links can-hide">
+                <div class="nav-item"><a href="https://github.com/handsontable/handsontable" target="_blank"
+                    rel="noopener noreferrer" class="nav-link external">
+                    GitHub
+                    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                        viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                        <path fill="currentColor"
+                          d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                        </path>
+                        <polygon fill="currentColor"
+                          points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                        </polygon>
+                      </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+                <div class="nav-item">
+                  <div class="dropdown-wrapper"><button type="button" aria-label="Support" class="dropdown-title"><span
+                        class="title">Support</span> <span class="arrow down"></span></button> <button type="button"
+                      aria-label="Support" class="mobile-dropdown-title"><span class="title">Support</span> <span
+                        class="arrow right"></span></button>
+                    <ul class="nav-dropdown" style="display:none;">
+                      <li class="dropdown-item"><!----> <a
+                          href="https://handsontable.com/contact?category=technical_support" target="_blank"
+                          rel="noopener noreferrer" class="nav-link external">
+                          Contact support
+                          <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px"
+                              y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                              <path fill="currentColor"
+                                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                              </path>
+                              <polygon fill="currentColor"
+                                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                              </polygon>
+                            </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                      <li class="dropdown-item"><!----> <a
+                          href="https://github.com/handsontable/handsontable/issues/new/choose" target="_blank"
+                          rel="noopener noreferrer" class="nav-link external">
+                          Report an issue
+                          <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px"
+                              y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                              <path fill="currentColor"
+                                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                              </path>
+                              <polygon fill="currentColor"
+                                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                              </polygon>
+                            </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                      <li class="dropdown-item"><!----> <a href="https://forum.handsontable.com" target="_blank"
+                          rel="noopener noreferrer" class="nav-link external">
+                          Handsontable forum
+                          <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px"
+                              y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                              <path fill="currentColor"
+                                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                              </path>
+                              <polygon fill="currentColor"
+                                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                              </polygon>
+                            </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                      <li class="dropdown-item"><!----> <a
+                          href="https://stackoverflow.com/questions/tagged/handsontable" target="_blank"
+                          rel="noopener noreferrer" class="nav-link external">
+                          Ask on Stack Overflow
+                          <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px"
+                              y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                              <path fill="currentColor"
+                                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                              </path>
+                              <polygon fill="currentColor"
+                                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                              </polygon>
+                            </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                      <li class="dropdown-item"><!----> <a href="https://handsontable.com/blog" target="_blank"
+                          rel="noopener noreferrer" class="nav-link external">
+                          Blog
+                          <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px"
+                              y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                              <path fill="currentColor"
+                                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                              </path>
+                              <polygon fill="currentColor"
+                                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                              </polygon>
+                            </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav> <label id="switch" class="switch" data-v-6781f250>
+                <div class="inner" style="display:none;" data-v-6781f250><input type="checkbox" data-v-6781f250> <span
+                    class="slider round" data-v-6781f250></span></div>
+              </label>
+            </div>
+          </div>
+        </header>
+        <div class="sidebar-mask"></div>
+        <aside class="sidebar">
+          <div class="framework-switcher-item"><span>Framework</span>
+            <nav class="nav-frameworks nav-links sidebar-mode"><img src="/img/pages/introduction/javascript.svg">
+              <nav class="nav-item">
+                <div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span
+                      class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button"
+                    aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span
+                      class="arrow right"></span></button>
+                  <ul class="nav-dropdown" style="display:none;">
+                    <li class="dropdown-item"><!----> <a href="/next/javascript-data-grid/" target="_self"
+                        class="nav-link external">
+                        JavaScript
+                        <!----></a></li>
+                    <li class="dropdown-item"><!----> <a href="/next/react-data-grid/" target="_self"
+                        class="nav-link external">
+                        React
+                        <!----></a></li>
+                    <li class="dropdown-item"><!----> <a href="/next/javascript-data-grid/angular-installation/"
+                        target="_self" class="nav-link external">
+                        Angular
+                        <!----></a></li>
+                    <li class="dropdown-item"><!----> <a href="/next/javascript-data-grid/vue-installation/"
+                        target="_self" class="nav-link external">
+                        Vue 2
+                        <!----></a></li>
+                    <li class="dropdown-item"><!----> <a href="/next/javascript-data-grid/vue3-installation/"
+                        target="_self" class="nav-link external">
+                        Vue 3
+                        <!----></a></li>
+                  </ul>
+                </div>
+              </nav>
+            </nav>
+          </div>
+          <nav class="nav-links sidebar-mode additional-menu">
+            <div class="nav-item"><a href="/javascript-data-grid/" class="nav-link router-link-active">
+                Guides
+              </a></div>
+            <div class="nav-item"><a href="/javascript-data-grid/api/" class="nav-link">
+                API reference
+              </a></div>
+          </nav>
+          <ul class="sidebar-links">
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>开始</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>Integrate with Angular</span></p>
+                <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>Integrate with Vue 2</span></p>
+                <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>与 Vue 3 集成</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>列</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>行</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>单元格功能</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>单元格函数</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>单元格类型</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>公式</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>附件和菜单</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>国际化</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>工具和打包</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>优化</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>安全</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading"><span class="arrow right"></span> <span>技术规范</span></p> <!---->
+              </section>
+            </li>
+            <li>
+              <section class="sidebar-group collapsable depth-0">
+                <p class="sidebar-heading open"><span class="arrow down"></span> <span>升级与迁移</span></p>
+                <ul class="sidebar-links sidebar-group-items">
+                  <li><a href="/javascript-data-grid/release-notes/" class="sidebar-link">Release notes</a></li>
+                  <li><a href="/javascript-data-grid/versioning-policy/" aria-current="page"
+                      class="active sidebar-link">Versioning policy</a></li>
+                  <li><a href="/javascript-data-grid/migration-from-7.4-to-8.0/" class="sidebar-link">Migrate from 7.4
+                      to 8.0</a></li>
+                  <li><a href="/javascript-data-grid/migration-from-8.4-to-9.0/" class="sidebar-link">Migrating from 8.4
+                      to 9.0</a></li>
+                  <li><a href="/javascript-data-grid/migration-from-9.0-to-10.0/" class="sidebar-link">Migrating from
+                      9.0 to 10.0</a></li>
+                  <li><a href="/javascript-data-grid/migration-from-10.0-to-11.0/" class="sidebar-link">Migrating from
+                      10.0 to 11.0</a></li>
+                  <li><a href="/javascript-data-grid/migration-from-11.1-to-12.0/" class="sidebar-link">Migrating from
+                      11.1 to 12.0</a></li>
+                  <li><a href="/javascript-data-grid/migration-from-12.4-to-13.0/" class="sidebar-link">Migrating from
+                      12.4 to 13.0</a></li>
+                </ul>
+              </section>
+            </li>
+          </ul>
+          <nav class="nav-links can-hide additional-menu">
+            <div class="nav-item"><a href="https://github.com/handsontable/handsontable" target="_blank"
+                rel="noopener noreferrer" class="nav-link external">
+                GitHub
+                <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                    viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                    <path fill="currentColor"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                    </path>
+                    <polygon fill="currentColor"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                    </polygon>
+                  </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+            <div class="nav-item">
+              <div class="dropdown-wrapper"><button type="button" aria-label="Support" class="dropdown-title"><span
+                    class="title">Support</span> <span class="arrow down"></span></button> <button type="button"
+                  aria-label="Support" class="mobile-dropdown-title"><span class="title">Support</span> <span
+                    class="arrow right"></span></button>
+                <ul class="nav-dropdown" style="display:none;">
+                  <li class="dropdown-item"><!----> <a
+                      href="https://handsontable.com/contact?category=technical_support" target="_blank"
+                      rel="noopener noreferrer" class="nav-link external">
+                      Contact support
+                      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                          viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                          <path fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                          </path>
+                          <polygon fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                          </polygon>
+                        </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                  <li class="dropdown-item"><!----> <a
+                      href="https://github.com/handsontable/handsontable/issues/new/choose" target="_blank"
+                      rel="noopener noreferrer" class="nav-link external">
+                      Report an issue
+                      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                          viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                          <path fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                          </path>
+                          <polygon fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                          </polygon>
+                        </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                  <li class="dropdown-item"><!----> <a href="https://forum.handsontable.com" target="_blank"
+                      rel="noopener noreferrer" class="nav-link external">
+                      Handsontable forum
+                      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                          viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                          <path fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                          </path>
+                          <polygon fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                          </polygon>
+                        </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                  <li class="dropdown-item"><!----> <a href="https://stackoverflow.com/questions/tagged/handsontable"
+                      target="_blank" rel="noopener noreferrer" class="nav-link external">
+                      Ask on Stack Overflow
+                      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                          viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                          <path fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                          </path>
+                          <polygon fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                          </polygon>
+                        </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                  <li class="dropdown-item"><!----> <a href="https://handsontable.com/blog" target="_blank"
+                      rel="noopener noreferrer" class="nav-link external">
+                      Blog
+                      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                          viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                          <path fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                          </path>
+                          <polygon fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                          </polygon>
+                        </svg> <span class="sr-only">(opens new window)</span></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <nav class="nav-versions nav-links can-hide additional-menu">
+            <nav class="nav-item">
+              <div class="dropdown-wrapper"><button type="button" aria-label="next" class="dropdown-title"><span
+                    class="title">next</span> <span class="arrow down"></span></button> <button type="button"
+                  aria-label="next" class="mobile-dropdown-title"><span class="title">next</span> <span
+                    class="arrow right"></span></button>
+                <ul class="nav-dropdown" style="display:none;"></ul>
+              </div>
+            </nav>
+          </nav>
+          <div class="theme-switcher-item">
+            Dark mode <label id="switch" class="switch" data-v-6781f250>
+              <div class="inner" style="display:none;" data-v-6781f250><input type="checkbox" data-v-6781f250> <span
+                  class="slider round" data-v-6781f250></span></div>
+            </label></div>
+        </aside>
+        <main class="page">
+          <div class="page-top" style="display:none;">
+            <div class="custom-block tip version-alert">
+              <p>There is a newer version of Handsontable available.
+                <a href="/latest/">Switch to the latest version ⟶</a>
+              </p>
+            </div>
+          </div>
+          <div class="theme-default-content content__default">
+            <h1 id="versioning-policy"><span class="header-framework">JavaScript Data Grid</span><a
+                href="#versioning-policy" class="header-anchor"></a> Versioning policy</h1>
+            <p>Handsontable follows the principles of <a href="https://semver.org/" target="_blank"
+                rel="nofollow noopener noreferrer">Semantic Versioning<span><svg xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"
+                    class="icon outbound">
+                    <path fill="currentColor"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                    </path>
+                    <polygon fill="currentColor"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                    </polygon>
+                  </svg> <span class="sr-only">(opens new window)</span></span></a> (SemVer).</p>
+            <p></p>
+            <div class="table-of-contents">
+              <div class="toc-container-header">In this article</div>
+              <ul>
+                <li><a href="#概述">概述</a></li>
+                <li><a href="#versioning-of-framework-variants">Versioning of framework variants</a></li>
+              </ul>
+            </div>
+            <p></p>
+            <h2 id="概述"><a href="#概述" class="header-anchor"></a> 概述</h2>
+            <p>We use the version format of X.Y.Z (Major.Minor.Patch), incrementing them when a certain type of change
+              occurs to the code.</p>
+            <p>The following table outlines which number would change when a Major, Minor, or Patch release occurs:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Version number</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Major</td>
+                  <td>X (X.y.z)</td>
+                  <td>Any backward-incompatible changes are introduced to the public API.</td>
+                </tr>
+                <tr>
+                  <td>Minor</td>
+                  <td>Y (x.Y.z)</td>
+                  <td>New backward-compatible functionality is introduced to the public API, or if any public API
+                    functionality is marked as deprecated.</td>
+                </tr>
+                <tr>
+                  <td>Patch</td>
+                  <td>Z (x.y.Z)</td>
+                  <td>Backward-compatible bug fixes are introduced. We define a bug fix as an internal change that fixes
+                    an incorrect behavior of Handsontable.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <h2 id="versioning-of-framework-variants"><a href="#versioning-of-framework-variants"
+                class="header-anchor"></a> Versioning of framework variants</h2>
+            <p>Up to Handsontable 8.3.2, each framework variant of Handsontable was versioned separately:</p>
+            <ul>
+              <li><a href="/javascript-data-grid/" class="router-link-active">Vanilla JavaScript</a></li>
+              <li><a href="/react-data-grid/">React wrapper</a></li>
+              <li><a href="/javascript-data-grid/angular-installation/">Angular wrapper</a></li>
+              <li><a href="/javascript-data-grid/vue-installation/">Vue 2 wrapper</a></li>
+              <li><a href="/javascript-data-grid/vue3-installation/">Vue 3 wrapper</a></li>
+            </ul>
+            <p>Starting with version 8.4.0 (released in May 2021), all framework variants of Handsontable have the same
+              version number.</p>
+            <p></p>
+            <p></p>
+          </div>
+          <footer class="page-edit">
+            <div class="edit-link"><a
+                href="https://github.com/handsontable/handsontable/edit/develop/content/guides/upgrade-and-migration/versioning-policy.md"
+                target="_blank" rel="noopener noreferrer">Suggest edits</a> <span><svg
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg> <span class="sr-only">(opens new window)</span></span></div>
+            <div class="last-updated"><span class="prefix">Last update:</span> <span class="time">Oct 19, 2023</span>
+            </div>
+          </footer>
+          <div class="page-nav">
+            <p class="inner"><span class="prev">
+                ←
+                <a href="/javascript-data-grid/release-notes/" class="prev">
+                  Release notes
+                </a></span> <span class="next"><a href="/javascript-data-grid/migration-from-7.4-to-8.0/">
+                  Migrate from 7.4 to 8.0
+                </a>
+                →
+              </span></p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="global-ui"></div>
+  </div>
+  <script src="/assets/js/app.1079bcf6.js" defer></script>
+  <script src="/assets/js/3.cb1a7b17.js" defer></script>
+  <script src="/assets/js/2.11f10a22.js" defer></script>
+  <script src="/assets/js/1.7ae82910.js" defer></script>
+  <script src="/assets/js/214.c069fd03.js" defer></script>
 </body>
+
 </html>
